@@ -1,0 +1,290 @@
+export const bike=[
+  
+            {
+                id:1,
+                name:"avenger",
+                img:require('../assets/bike/bajaj/avenger-street-160.webp')
+            },
+            {
+                id:2,
+                name:"chetak",
+                img:require('../assets/bike/bajaj/chetak-right-front-three-quarter.webp')
+            },
+            {
+                id:3,
+                name:"dominar",
+                img:require('../assets/bike/bajaj/dominar-400-right-front-three-quarter-8.webp')
+            },
+            {
+                id:4,
+                name:"platina-100",
+                img:require('../assets/bike/bajaj/platina-100-right-front-three-quarter-2.webp')
+            },
+            {
+                id:5,
+                name:"platina-110",
+                img:require('../assets/bike/bajaj/platina-110-right-front-three-quarter-8.webp')
+            },
+            {
+                id:6,
+                name:"pulsar-125",
+                img:require('../assets/bike/bajaj/pulsar-125-right-front-three-quarter-7.webp')
+            },
+            {
+                id:7,
+                name:"pulsar-150",
+                img:require('../assets/bike/bajaj/pulsar-150-right-front-three-quarter-7.webp')
+            },
+            {
+                id:8,
+                name:"pulsar-220",
+                img:require('../assets/bike/bajaj/pulsar-220-right-side-view-3.webp')
+            },
+            
+        
+            {
+                id:9,
+                name:"bullet",
+                img:require('../assets/bike/enfield/bullet.webp')
+            },
+            {
+                id:10,
+                name:"classic-350",
+                img:require('../assets/bike/enfield/classic-350-2021-right-front-three-quarter-4.webp')
+            },
+      
+            {
+                id:11,
+                name:"destini",
+                img:require('../assets/bike/hero/destini.webp')
+            },
+            {
+                id:12,
+                name:"glamour",
+                img:require('../assets/bike/hero/glamour-right-front-three-quarter-3.webp')
+            },
+      
+    {
+        id:14,
+        name:"Honda",
+        img:require('../assets/bike/honda/activa-6g.webp')},
+    {
+        id:15,
+        name:"Ktm",
+        img:require('../assets/bike/ktm/250.webp')},
+
+        {
+            id:16,
+            name:"avenger",
+            img:require('../assets/bike/bajaj/avenger-street-160.webp')
+        },
+        {
+            id:17,
+            name:"chetak",
+            img:require('../assets/bike/bajaj/chetak-right-front-three-quarter.webp')
+        },
+        {
+            id:18,
+            name:"dominar",
+            img:require('../assets/bike/bajaj/dominar-400-right-front-three-quarter-8.webp')
+        },
+        {
+            id:19,
+            name:"platina-100",
+            img:require('../assets/bike/bajaj/platina-100-right-front-three-quarter-2.webp')
+        },
+        {
+            id:20,
+            name:"platina-110",
+            img:require('../assets/bike/bajaj/platina-110-right-front-three-quarter-8.webp')
+        },
+        {
+            id:21,
+            name:"pulsar-125",
+            img:require('../assets/bike/bajaj/pulsar-125-right-front-three-quarter-7.webp')
+        },
+        {
+            id:22,
+            name:"pulsar-150",
+            img:require('../assets/bike/bajaj/pulsar-150-right-front-three-quarter-7.webp')
+        },
+        {
+            id:23,
+            name:"pulsar-220",
+            img:require('../assets/bike/bajaj/pulsar-220-right-side-view-3.webp')
+        },
+        
+    
+        {
+            id:24,
+            name:"bullet",
+            img:require('../assets/bike/enfield/bullet.webp')
+        },
+        {
+            id:25,
+            name:"classic-350",
+            img:require('../assets/bike/enfield/classic-350-2021-right-front-three-quarter-4.webp')
+        },
+  
+        {
+            id:26,
+            name:"destini",
+            img:require('../assets/bike/hero/destini.webp')
+        },
+        {
+            id:27,
+            name:"glamour",
+            img:require('../assets/bike/hero/glamour-right-front-three-quarter-3.webp')
+        },
+  
+{
+    id:28,
+    name:"Honda",
+    img:require('../assets/bike/honda/activa-6g.webp')},
+{
+    id:29,
+    name:"Ktm",
+    img:require('../assets/bike/ktm/250.webp')},
+    {
+        id:30,
+        name:"avenger",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp')
+    },
+    {
+        id:31,
+        name:"chetak",
+        img:require('../assets/bike/bajaj/chetak-right-front-three-quarter.webp')
+    },
+    {
+        id:32,
+        name:"dominar",
+        img:require('../assets/bike/bajaj/dominar-400-right-front-three-quarter-8.webp')
+    },
+    {
+        id:33,
+        name:"platina-100",
+        img:require('../assets/bike/bajaj/platina-100-right-front-three-quarter-2.webp')
+    },
+    {
+        id:34,
+        name:"platina-110",
+        img:require('../assets/bike/bajaj/platina-110-right-front-three-quarter-8.webp')
+    },
+    {
+        id:35,
+        name:"pulsar-125",
+        img:require('../assets/bike/bajaj/pulsar-125-right-front-three-quarter-7.webp')
+    },
+    {
+        id:36,
+        name:"pulsar-150",
+        img:require('../assets/bike/bajaj/pulsar-150-right-front-three-quarter-7.webp')
+    },
+    {
+        id:37,
+        name:"pulsar-220",
+        img:require('../assets/bike/bajaj/pulsar-220-right-side-view-3.webp')
+    },
+    
+
+    {
+        id:38,
+        name:"bullet",
+        img:require('../assets/bike/enfield/bullet.webp')
+    },
+    {
+        id:39,
+        name:"classic-350",
+        img:require('../assets/bike/enfield/classic-350-2021-right-front-three-quarter-4.webp')
+    },
+
+    {
+        id:40,
+        name:"destini",
+        img:require('../assets/bike/hero/destini.webp')
+    },
+    {
+        id:41,
+        name:"glamour",
+        img:require('../assets/bike/hero/glamour-right-front-three-quarter-3.webp')
+    },
+
+{
+id:42,
+name:"Honda",
+img:require('../assets/bike/honda/activa-6g.webp')},
+{
+id:43,
+name:"Ktm",
+img:require('../assets/bike/ktm/250.webp')},
+
+{
+    id:44,
+    name:"avenger",
+    img:require('../assets/bike/bajaj/avenger-street-160.webp')
+},
+{
+    id:45,
+    name:"chetak",
+    img:require('../assets/bike/bajaj/chetak-right-front-three-quarter.webp')
+},
+{
+    id:46,
+    name:"dominar",
+    img:require('../assets/bike/bajaj/dominar-400-right-front-three-quarter-8.webp')
+},
+{
+    id:48,
+    name:"platina-100",
+    img:require('../assets/bike/bajaj/platina-100-right-front-three-quarter-2.webp')
+},
+{
+    id:49,
+    name:"platina-110",
+    img:require('../assets/bike/bajaj/platina-110-right-front-three-quarter-8.webp')
+},
+{
+    id:50,
+    name:"pulsar-125",
+    img:require('../assets/bike/bajaj/pulsar-125-right-front-three-quarter-7.webp')
+},
+{
+    id:51,
+    name:"pulsar-150",
+    img:require('../assets/bike/bajaj/pulsar-150-right-front-three-quarter-7.webp')
+},
+{
+    id:52,
+    name:"pulsar-220",
+    img:require('../assets/bike/bajaj/pulsar-220-right-side-view-3.webp')
+},
+
+
+{
+    id:53,
+    name:"bullet",
+    img:require('../assets/bike/enfield/bullet.webp')
+},
+{
+    id:54,
+    name:"classic-350",
+    img:require('../assets/bike/enfield/classic-350-2021-right-front-three-quarter-4.webp')
+},
+
+{
+    id:55,
+    name:"destini",
+    img:require('../assets/bike/hero/destini.webp')
+},
+{
+    id:56,
+    name:"glamour",
+    img:require('../assets/bike/hero/glamour-right-front-three-quarter-3.webp')
+},
+
+{
+id:57,
+name:"Honda",
+img:require('../assets/bike/honda/activa-6g.webp')},
+
+        ]
