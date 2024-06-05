@@ -1,3 +1,36 @@
+export const servicetype=[
+    {
+        id:1,
+        name:"Bajaj",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp'),
+    },
+    {
+        id:1,
+        name:"Bajaj",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp'),
+    },
+    {
+        id:1,
+        name:"Bajaj",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp'),
+    },
+    {
+        id:1,
+        name:"Bajaj",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp'),
+    },
+    {
+        id:1,
+        name:"Bajaj",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp'),
+    },
+    {
+        id:1,
+        name:"Bajaj",
+        img:require('../assets/bike/bajaj/avenger-street-160.webp'),
+    },
+    ]
+
 export const bike=[
     {
         id:1,

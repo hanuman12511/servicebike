@@ -39,10 +39,7 @@ export default function About(){
     
     function onEndReached(){
      
-        
-            if(!loadmore){
-                fatchData()
-            }
+        setPage(prevPage => prevPage + 1);
     }
     return(
        <>

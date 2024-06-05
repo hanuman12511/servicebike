@@ -3,18 +3,20 @@ import React, { useEffect, useState } from 'react'
 import {Text,View,StyleSheet, Image,Animated,  TouchableOpacity, FlatList} from 'react-native'
 import bikelogo from '../assets/logo.png'
 import About from '../screen/About';
-import {bike} from '../data/data'
+import {bike,servicetype} from '../data/data'
 import {Linking} from 'react-native'
 import HomeScreen from '../screen/HomeScreen';
 import Mapp from '../screen/Mapp';
 import Map1 from '../screen/Map1';
 import Geocoder from 'react-native-geocoding';
 import GetLocation from 'react-native-get-location'
+import { SliderBox } from "react-native-image-slider-box";
 import {
   PermissionsAndroid,
   Platform,
 } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
+import { blue } from 'react-native-reanimated/lib/typescript/reanimated2/Colors';
 
 const BottomTab = createBottomTabNavigator();
 
@@ -24,6 +26,14 @@ function Tab() {
   const [animation] = useState(new Animated.Value(0));
   const [animation1] = useState(new Animated.Value(0));
   const [location ,setLocation] = useState('');
+  const [servicetype1 ,setServiceType] = useState(servicetype);
+
+ const  images= [
+    "https://source.unsplash.com/1024x768/?nature",
+    "https://source.unsplash.com/1024x768/?water",
+    "https://source.unsplash.com/1024x768/?girl",
+    "https://source.unsplash.com/1024x768/?tree", // Network image
+    ]
   useEffect(()=>{
  
   },[])
@@ -88,6 +98,20 @@ useEffect(()=>{
     },[])
 
 
+    const renderitemservice=(item:any)=>{
+     
+      let item1= item.item
+      
+      return(
+        <View style={styles.serviceView}>
+            <Image source={item1.img} style={styles.serviceimage}/>
+            <Text style={styles.servicetextname}>{item1.name}</Text>
+            <Text style={styles.servicetextname}>services</Text>
+        </View>
+      )
+    }
+
+
 
   const t1 = animation.interpolate({
     inputRange: [0, 1],
@@ -143,16 +167,37 @@ useEffect(()=>{
   function HomeScreen1(){
     return(
         <View style={styles.mainview}>
+             <View style={styles.mainviewtop}>
             <View style={styles.header}>
             <View>
-                    <Text style={{}}>{'Bike'}</Text>
+                    <Text style={styles.headertext}>{'BikeService'}</Text>
                     <Text style={{}}>{location.slice(0,30)}</Text>
                 </View>
                     <TouchableOpacity onPress={startAnimation}>
                     <Image source={bikelogo} style={styles.bikelogo}/>
                     </TouchableOpacity>
             </View>
-      
+            <SliderBox 
+            images={images}
+            autoplay
+            circleLoop
+            />
+
+          </View>
+          <View style={styles.serviceshow}>
+              <View style={styles.serviceshowtop}>
+                  <Text style={styles.serviceshowtoplefttext}>Service Type</Text>
+                  <TouchableOpacity>  
+                  <Text style={styles.serviceshowtoprighttext}>View More</Text>  
+                  </TouchableOpacity>
+              </View>  
+
+              <FlatList
+              data={servicetype1}
+              renderItem={renderitemservice}
+              numColumns={3}
+              />  
+          </View>
         </View>
     )
 }
@@ -300,15 +345,57 @@ const styles=StyleSheet.create({
   },
   mainview:{
       flex:1,
-      height:100,
-      marginHorizontal:20
+   },
+
+  mainviewtop:{
+    backgroundColor:"#C0D6E8",
+  paddingBottom:20,
+  },
+  serviceshow:{
+   paddingHorizontal:10
+  },
+  
+  serviceshowtop:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    padding:10,
+    alignItems:'center'
+  },
+  serviceshowtoplefttext:{
+    fontSize:20,
+    color:"#A34343"
+  },
+  serviceshowtoprighttext:{
+    color:"#C0D6E8"
+    
+  },
+
+  serviceView:{
+    flex:1,
+    backgroundColor:'#fff',
+    borderRadius:10,
+    margin:5,
+    alignItems:'center',
+    paddingVertical:10
+  },
+  servicetextname:{
+    flex:1,
+   
+  },
+  serviceimage:{
+  width:50,
+  height:50
   },
   header:{
-      width:'100%',
       height:70,
       flexDirection:'row',
       alignItems:'center',
       justifyContent:'space-between',
+      marginHorizontal:10
+  },
+  headertext:{
+    fontSize:20,
+    color:"#000"
   },
   bikelogo:{width:50,height:40
   },

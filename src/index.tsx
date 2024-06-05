@@ -14,13 +14,19 @@ import NavigationRouter from './navigation'
 import auth from '@react-native-firebase/auth';
 import firebase from'@react-native-firebase/app' 
 import firestore from '@react-native-firebase/firestore';
-
+import messaging from '@react-native-firebase/messaging';
 
 
 import {LocationGeo} from './utility/LocationGeo';
 
 
 export default function App(){
+
+  useEffect(()=>{
+    messaging().setBackgroundMessageHandler(async remoteMessage => {
+      console.log('Message handled in the background!', remoteMessage);
+    });
+  },[])
 return(
    
       
