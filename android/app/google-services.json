@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711876869856",
+    "project_id": "reactjs-9a5ff",
+    "storage_bucket": "reactjs-9a5ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711876869856:android:fb414b0297c502a8f05a85",
+        "android_client_info": {
+          "package_name": "com.servicebike"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYQPIttXADN77RnfikqZlN06-OZKZnNxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
